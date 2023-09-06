@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+        .container {
+        border: 1px solid black; padding: 5px; background-color: rgb(233, 229, 229); width: 35%;
+      }
+      ul li a:before {
+        content: " | ";
+        font-weight: bold;
+      }
+      .form_border tr td{
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <p><strong>Click here to see the CSS tasks: <a href="css_task.html">CSS Task</a></strong></p>
+    <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    
+    <!-- --------------------------HTML TASK 1-------------------------- -->
+    <p><strong>HTML Task 1</strong></p>
+    <table style="width: 100%;">
+      <thead style="border: 1px solid rgb(255, 255, 255); padding: 10px; background-color: rgba(35, 162, 185, 0.63);">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody style="border: 1px solid rgb(255, 255, 255); padding: 10px; background-color: rgba(35, 162, 185, 0.63);">
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <!-- --------------------------HTML TASK 2-------------------------- -->
+    <p><strong>HTML Task 2</strong></p>
+    <div class="container">
+        <p>Lists can be nested (List inside list):</p>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <ul>
+                    <li>Black Tea</li>
+                    <li>Green Tea</li>
+                </ul>
+                <li>Milk</li>
+            </ul>
+      </div>
+      <br><br>
+
+
+    <!-- --------------------------HTML TASK 3-------------------------- -->
+    <p><strong>HTML Task 3</strong></p>
+    <div class="container">
+        <p>Click Any of the Following Links</p>
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+          <li>
+            <a href="https://www.google.com" target="_blank">Opens in New</a>
+            <a href="https://www.google.com" target="_self">Opens in Self</a>
+            <a href="https://www.google.com" target="_parent">Opens in Parent</a>
+            <a href="https://www.google.com" target="_parent">Opens in Body</a>
+            <a href="mailto:someone@example.com">Send email</a>
+          </li>
+        </ul>
+      </div>
+      <br><br>
+
+    <!-- --------------------------HTML TASK 4-------------------------- -->
+    <p><strong>HTML Task 4</strong></p>
+      <form>
+        <table style="width: 25%;">
+          <tr>
+            <td>
+              <label for="fullname">Full Name:</label>
+            </td>
+            <td>
+              <input type="text" id="fullname" name="fullname" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="username">Username:</label>
+            </td>
+            <td>
+              <input type="text" id="username" name="username" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password:</label>
+            </td>
+            <td>
+              <input type="password" id="password" name="password" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="repassword">Re-enter Password:</label>
+            </td>
+            <td>
+              <input type="password" id="repassword" name="repassword" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address">Address:</label>
+            </td>
+            <td>
+              <input type="text" id="address" name="address" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="age">Age:</label>
+            </td>
+            <td>
+              <input type="number" id="age" name="age" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">Gender:</label>
+            </td>
+            <td>
+              <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </td>
+          </tr>
+        </table><br>
+        <input type="submit" value="Save"/>
+    </form><br><br>
+
+
+    <!-- --------------------------HTML TASK 5-------------------------- -->
+    <p><strong>HTML Task 5</strong></p>
+    <div style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255);width: 40%;">
+        <form>
+            <table style="border-collapse: collapse; width: 100%; background-color: #f2f2f2;">
+                <tbody class="form_border" style="border: 1px solid #010101; text-align: center; padding: 8px;">
+                    <tr>
+                        <td><label for="fname"><strong>First Name</strong></label></td>
+                        <td><input type="text" name="fname" id="fname" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname"><strong>Last Name</strong></label></td>
+                        <td><input type="text" name="lname" id="lname" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><strong>Email</strong></label></td>
+                        <td><input type="email" name="email" id="email" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password"><strong>Password</strong></label></td>
+                        <td><input type="password" name="password" id="password" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="re_password"><strong>Re-enter Password</strong></label></td>
+                        <td><input type="password" name="re_password" id="re_password" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age"><strong>Age</strong></label></td>
+                        <td><input type="number" name="age" id="age" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender"><strong>Gender</strong></label></td>
+                        <td>
+                            <input type="radio" name="gender" id="gender">Male
+                            <input type="radio" name="gender" id="gender">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone"><strong>Phone</strong></label></td>
+                        <td><input type="number" name="phone" id="phone" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address"><strong>Address</strong></label></td>
+                        <td><textarea name="address" id="address" rows="6" style="width: 97%;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="state"><strong>State</strong></label></td>
+                        <td><input type="text" name="state" id="state" style="width: 97%;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country"><strong>Country</strong></label></td>
+                        <td><select name="county" id="county" style="width: 50%;">
+                            <option disabled selected value="">Choose your country</option>
+                            <option value="india">India</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="usa">USA</option>
+                            <option value="england">England</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="language"><strong>Languages Known</strong></label></td>
+                        <td>
+                            <input type="checkbox" name="language" id="language">Hindi
+                            <input type="checkbox" name="language" id="language">English
+                            <input type="checkbox" name="language" id="language">Kannada
+                            <input type="checkbox" name="language" id="language">Telugu
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="info" id="info" checked>
+                            <label for="info">Hereby I declare all the given details are true.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;">
+                            Log in to <a href="http://www.ethnus.com">Ethnus</a >website.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div><br><br>
+    
+
+   
+
+    </body>
+</html>
+
