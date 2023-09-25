@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="justify-content: center; text-align: center; align-content: center;display: flex;">
+    <div style="border: 1px solid black; padding: 5px;background-image: linear-gradient(to top, #f49ff6, #ff9dc9, #ffb197, #ffd474, #f2f979); width: 40%;margin-top: 5%;">
+        <h1><strong>Registration Form</strong></h1>
+        <form>
+            <table style="border-collapse: collapse; width: 100%;">
+                <tbody class="form_border" style="text-align: center; padding: 8px;">
+                    <tr>
+                        <td><label for="fname"><strong>First Name</strong></label></td>
+                        <td><input type="text" name="fname" id="fname" style="width: 97%;" ></td>
+                        <td><label for="fname-val"><strong></strong></label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname"><strong>Last Name</strong></label></td>
+                        <td><input type="text" name="lname" id="lname" style="width: 97%;" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><strong>Email</strong></label></td>
+                        <td><input type="email" name="email" id="email" style="width: 97%;" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password"><strong>Password</strong></label></td>
+                        <td><input type="password" name="password" id="password" style="width: 97%;" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="re_password"><strong>Re-enter Password</strong></label></td>
+                        <td><input type="password" name="re_password" id="re_password" style="width: 97%;" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age"><strong>Age</strong></label></td>
+                        <td><input type="number" name="age" id="age" style="width: 97%;" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender"><strong>Gender</strong></label></td>
+                        <td>
+                            <input type="radio" name="gender" id="gender">Male
+                            <input type="radio" name="gender" id="gender">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone"><strong>Phone</strong></label></td>
+                        <td><input type="number" name="phone" id="phone" style="width: 97%;" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address"><strong>Address</strong></label></td>
+                        <td><textarea name="address" id="address" rows="6" style="width: 97%;" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="state"><strong>State</strong></label></td>
+                        <td><input type="text" name="state" id="state" style="width: 97%;" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country"><strong>Country</strong></label></td>
+                        <td><select name="county" id="county" style="width: 50%;" >
+                            <option disabled selected value="">Choose your country</option>
+                            <option value="india">India</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="usa">USA</option>
+                            <option value="england">England</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="language"><strong>Languages Known</strong></label></td>
+                        <td>
+                            <input type="checkbox" name="language" id="language">Hindi
+                            <input type="checkbox" name="language" id="language">English
+                            <input type="checkbox" name="language" id="language">Kannada
+                            <input type="checkbox" name="language" id="language">Telugu
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="info" id="info" checked>
+                            <label for="info">Hereby I declare all the given details are true.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;">
+                            Log in to <a href="http://www.ethnus.com">Ethnus</a >website.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div><br><br>
+    <script src="js_form_validator.js"></script>
+</body>
+</html>
